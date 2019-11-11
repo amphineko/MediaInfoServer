@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibMediaInfoTest", "LibMedi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibMediaInfo", "LibMediaInfo\LibMediaInfo.csproj", "{E575DB2D-32D4-419D-814F-9E1208C05103}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaInfoServer", "MediaInfoServer\MediaInfoServer.csproj", "{E9CD248A-1EE9-4EFE-B694-6AF49F137123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{E575DB2D-32D4-419D-814F-9E1208C05103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E575DB2D-32D4-419D-814F-9E1208C05103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E575DB2D-32D4-419D-814F-9E1208C05103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9CD248A-1EE9-4EFE-B694-6AF49F137123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9CD248A-1EE9-4EFE-B694-6AF49F137123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9CD248A-1EE9-4EFE-B694-6AF49F137123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9CD248A-1EE9-4EFE-B694-6AF49F137123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

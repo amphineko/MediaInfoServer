@@ -1,0 +1,5 @@
+{
+    "accessKey": "key",
+    "secretKey": "secret",
+    "serviceUrl": "http://localhost:9000/"
+}
