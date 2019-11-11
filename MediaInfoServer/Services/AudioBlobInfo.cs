@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MediaInfoServer.Services
+namespace PodcastCore.MediaInfoServer.Services
 {
     public class AudioBlobInfo
     {

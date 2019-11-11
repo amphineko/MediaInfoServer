@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LibMediaInfo
+namespace PodcastCore.MediaInfoServer.LibMediaInfo
 {
     public static class MediaInfoExtensions
     {

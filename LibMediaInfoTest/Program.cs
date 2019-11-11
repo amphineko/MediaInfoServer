@@ -2,9 +2,9 @@
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using LibMediaInfo;
+using PodcastCore.MediaInfoServer.LibMediaInfo;
 
-namespace LibMediaInfoTest
+namespace PodcastCore.MediaInfoServer.LibMediaInfoTest
 {
     internal static class Program
     {

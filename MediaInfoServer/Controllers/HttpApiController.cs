@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using MediaInfoServer.Services;
 using Microsoft.AspNetCore.Mvc;
+using PodcastCore.MediaInfoServer.Services;
 
-namespace MediaInfoServer.Controllers
+namespace PodcastCore.MediaInfoServer.Controllers
 {
     [ApiController]
     [Route("api/v1/getBlobMediaInfo")]

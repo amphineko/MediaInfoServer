@@ -3,9 +3,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Amazon.S3;
 using Amazon.S3.Model;
-using LibMediaInfo;
+using PodcastCore.MediaInfoServer.LibMediaInfo;
 
-namespace MediaInfoServer.Services
+namespace PodcastCore.MediaInfoServer.Services
 {
     public class BlobMediaInfoService
     {

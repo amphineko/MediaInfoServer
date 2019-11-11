@@ -1,14 +1,14 @@
 using Amazon;
 using Amazon.S3;
-using MediaInfoServer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PodcastCore.MediaInfoServer.Services;
 
-namespace MediaInfoServer
+namespace PodcastCore.MediaInfoServer
 {
     public class Startup
     {

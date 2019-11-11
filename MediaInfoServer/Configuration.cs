@@ -1,4 +1,4 @@
-﻿namespace MediaInfoServer
+﻿namespace PodcastCore.MediaInfoServer
 {
     public class Configuration
     {
