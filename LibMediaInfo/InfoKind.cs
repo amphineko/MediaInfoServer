@@ -1,4 +1,4 @@
-﻿namespace PodcastCore.MediaInfoServer.LibMediaInfo
+﻿namespace PodcastCore.LibMediaInfo
 {
     public enum InfoKind
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace PodcastCore.MediaInfoServer.LibMediaInfo
+namespace PodcastCore.LibMediaInfo
 {
     internal static class LibMediaInfo
     {

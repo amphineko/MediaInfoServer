@@ -6,9 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using PodcastCore.MediaInfoServer.Services;
+using PodcastCore.AudioBlobInbox.Services;
 
-namespace PodcastCore.MediaInfoServer
+namespace PodcastCore.AudioBlobInbox
 {
     public class Startup
     {
