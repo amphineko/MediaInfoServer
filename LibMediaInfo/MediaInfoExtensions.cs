@@ -11,7 +11,14 @@ namespace PodcastCore.LibMediaInfo
 
         public static int GetStreamCount(this MediaInfo media, StreamKind streamKind)
         {
-            return Convert.ToInt32(media.Get(streamKind, 0, "StreamCount"));
+            try
+            {
+                return Convert.ToInt32(media.Get(streamKind, 0, "StreamCount"));
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         public static string GetCodecId(this MediaInfo media, StreamKind streamKind, int streamNumber)
@@ -26,7 +33,14 @@ namespace PodcastCore.LibMediaInfo
 
         public static int GetDuration(this MediaInfo media, StreamKind streamKind, int streamNumber)
         {
-            return Convert.ToInt32(media.Get(streamKind, streamNumber, "Duration"));
+            try
+            {
+                return Convert.ToInt32(media.Get(streamKind, streamNumber, "Duration"));
+            }
+            catch
+            {
+                return 0;
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Minio;
 using PodcastCore.AudioBlobInbox.Services;
 
 namespace PodcastCore.AudioBlobInbox
@@ -25,19 +26,19 @@ namespace PodcastCore.AudioBlobInbox
             services.AddLogging(builder => builder.AddConsole());
             services.AddMvc();
 
-            services.AddSingleton(_ =>
-            {
-                var config = new Configuration();
-                _configuration.Bind(config);
+            var config = new Configuration();
+            _configuration.Bind(config);
+            services.AddSingleton(config);
 
-                return new AmazonS3Client(config.AccessKey, config.SecretKey, new AmazonS3Config
-                {
-                    ForcePathStyle = true,
-                    RegionEndpoint = RegionEndpoint.APEast1,
-                    ServiceURL = config.ServiceUrl
-                });
-            });
-            services.AddSingleton<BlobMediaInfoService>();
+            services.AddSingleton(new MinioClient(config.ServiceUrl, config.AccessKey, config.SecretKey));
+            services.AddSingleton(new AmazonS3Client(config.AccessKey, config.SecretKey, new AmazonS3Config
+            {
+                ForcePathStyle = true,
+                RegionEndpoint = RegionEndpoint.APEast1,
+                ServiceURL = config.ServiceUrl
+            }));
+
+            services.AddSingleton<MediaInfoService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -1,5 +1,6 @@
 {
-    "accessKey": "key",
-    "secretKey": "secret",
-    "serviceUrl": "http://localhost:9000/"
+  "accessKey": "key",
+  "bucketName": "podcasts",
+  "secretKey": "secret",
+  "serviceUrl": "localhost:9000"
 }

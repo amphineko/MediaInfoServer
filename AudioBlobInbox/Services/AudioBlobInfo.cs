@@ -1,11 +1,22 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace PodcastCore.AudioBlobInbox.Services
 {
     public class AudioBlobInfo
     {
-        [JsonPropertyName("containerFormat")] public string ContainerFormat { get; set; }
+        public static readonly IDictionary<string, string> ContainerTypes = new Dictionary<string, string>
+        {
+            {"MPEG Audio", "audio/mpeg"},
+            {"MPEG-4", "audio/mpeg4-generic"}
+        };
+
+        [JsonPropertyName("_audioCount")] public int AudioStreamCount { get; set; }
+
+        [JsonPropertyName("container")] public string ContainerType { get; set; }
 
         [JsonPropertyName("duration")] public int Duration { get; set; }
+
+        [JsonPropertyName("objectKey")] public string ObjectKey { get; set; }
     }
 }
