@@ -1,4 +1,4 @@
-﻿namespace PodcastCore.AudioBlobInbox
+﻿namespace PodcastCore.MediaInfoServer
 {
     public class Configuration
     {

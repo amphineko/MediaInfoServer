@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
-        <RootNamespace>PodcastCore.AudioBlobInbox</RootNamespace>
+        <RootNamespace>PodcastCore.MediaInfoServer</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

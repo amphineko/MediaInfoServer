@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace PodcastCore.AudioBlobInbox.Services
+namespace PodcastCore.MediaInfoServer.Services
 {
     public class AudioBlobInfo
     {
@@ -16,7 +16,5 @@ namespace PodcastCore.AudioBlobInbox.Services
         [JsonPropertyName("container")] public string ContainerType { get; set; }
 
         [JsonPropertyName("duration")] public int Duration { get; set; }
-
-        [JsonPropertyName("objectKey")] public string ObjectKey { get; set; }
     }
 }

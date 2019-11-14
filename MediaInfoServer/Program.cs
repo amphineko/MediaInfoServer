@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace PodcastCore.AudioBlobInbox
+namespace PodcastCore.MediaInfoServer
 {
     internal static class Program
     {

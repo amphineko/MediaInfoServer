@@ -1,4 +1,4 @@
-﻿namespace PodcastCore.AudioBlobInbox.Controllers
+﻿namespace PodcastCore.MediaInfoServer.Controllers
 {
     public class ErrorResult
     {
